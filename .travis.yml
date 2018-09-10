@@ -3,7 +3,5 @@ node_js:
    - "node"
 script:
    - echo "Deploy!!"
-install:
-   - nvm install -g firebase-tools
 after_success:
    - firebase deploy — project ci-testing-4d6f0 — token $FIREBASE_TOKEN.
