@@ -14,8 +14,8 @@ before_script:
 script:
 - echo "Husnain"
 
-deploy:
-- firebase deploy — project ci-testing-4d6f0 — token $FIREBASE_TOKEN.
+after_success:
+- firebase deploy --token $FIREBASE_TOKE --non-interactive
 
 notifications:
   email:
