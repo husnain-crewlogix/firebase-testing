@@ -1,7 +1,5 @@
 language: node_js
 node_js:
    - "node"
-script:
-   - echo "Deploy!!"
 after_success:
    - firebase deploy — project ci-testing-4d6f0 — token $FIREBASE_TOKEN.
