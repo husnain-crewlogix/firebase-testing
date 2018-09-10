@@ -14,8 +14,8 @@ before_script:
 script:
 - echo "Husnain"
 
-after_success:
-- firebase deploy --token $FIREBASE_TOKEN --non-interactive
+deploy:
+  provider: firebase
 
 notifications:
   email:
